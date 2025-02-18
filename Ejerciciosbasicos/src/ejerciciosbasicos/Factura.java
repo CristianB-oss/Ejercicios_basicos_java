@@ -35,9 +35,9 @@ public double CalcularSubtotal(){
 }
  public double calcularImpuesto(double subtotal) {
         if (esEstudiante) {
-            return subtotal * 0.05;  // 5% si es estudiante
+            return subtotal * 0.05; 
         } else {
-            return subtotal * 0.13;  // 13% si no es estudiante
+            return subtotal * 0.13; 
         }
     }
 
@@ -50,7 +50,7 @@ public double CalcularSubtotal(){
         double impuesto = calcularImpuesto(subtotal);
         double total = calcularTotal(subtotal, impuesto);
 
-        // Mostrar la factura
+        
         System.out.println("Factura:");
         System.out.println("Cliente: " + cliente);
         System.out.println("Producto: " + producto);
